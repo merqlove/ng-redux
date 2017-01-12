@@ -1,6 +1,7 @@
 var path = require('path');
 // var _ = require('lodash');
 
+var env = process.env.NODE_ENV;
 var config  = require('./webpack.config.base');
 
 // config.externalHelper.externals = {
@@ -33,7 +34,7 @@ var config  = require('./webpack.config.base');
 
 config.output = {
   path: path.join(__dirname, 'dist'),
-  filename: 'ng-redux.umd.js',
+  filename: env === 'production' ? 'ng-redux.umd.min.js' : 'ng-redux.umd.js',
   libraryTarget: 'umd',
   library: 'ngRedux'
 };

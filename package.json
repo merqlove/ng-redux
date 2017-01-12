@@ -4,12 +4,14 @@
   "description": "Redux bindings for Angular.js",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "npm run build:lib && npm run build:min && npm run build:max && npm run build:var && npm run build:umd",
+    "build": "npm run build:lib && npm run build:min && npm run build:max && npm run build:var && npm run build:var:production && npm run build:umd && npm run build:umd:production",
     "build:lib": "rm -rf lib && `npm bin`/babel src --out-dir lib",
     "build:min": "./node_modules/.bin/webpack --optimize-minimize lib/index.js dist/ng-redux.min.js",
     "build:max": "./node_modules/.bin/webpack lib/index.js dist/ng-redux.js",
     "build:var": "./node_modules/.bin/webpack --config webpack.config.var.js",
     "build:umd": "./node_modules/.bin/webpack --config webpack.config.umd.js",
+    "build:var:production": "NODE_ENV=production ./node_modules/.bin/webpack --config webpack.config.var.js",
+    "build:umd:production": "NODE_ENV=production ./node_modules/.bin/webpack --config webpack.config.umd.js",
     "test": "mocha --compilers js:babel-register --recursive"
   },
   "repository": {
@@ -38,13 +40,7 @@
     "semantic-release": "^4.3.5"
   },
   "peerDependencies": {
-    "lodash.assign": "^3.2.0",
-    "lodash.curry": "^4.0.1",
-    "lodash.isarray": "^3.0.4",
-    "lodash.isfunction": "^3.0.6",
-    "lodash.isobject": "^3.0.2",
-    "lodash.isplainobject": "^3.2.0",
-    "lodash.map": "^4.4.0",
+    "lodash": "^4.0",
     "redux": "^3.0.0"
   },
   "dependencies": {

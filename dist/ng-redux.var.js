@@ -1,1 +1,494 @@
-!function(t){function e(r){if(n[r])return n[r].exports;var o=n[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,e),o.loaded=!0,o.exports}var n={};return e.m=t,e.c=n,e.p="",e(0)}([function(t,e,n){t.exports=n(8)},function(t,e,n){"use strict";var r=function(t,e,n,r,o,u,i,a){if(!t){var f;if(void 0===e)f=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var c=[n,r,o,u,i,a],d=0;f=Error(e.replace(/%s/g,function(){return c[d++]})),f.name="Invariant Violation"}throw f.framesToPop=1,f}};t.exports=r},function(t,e){t.exports=Redux},function(t,e){t.exports=_.assign},function(t,e){t.exports=_.isFunction},function(t,e,n){var r,o,u;!function(i,a){o=[t,e,n(9),n(10),n(1),n(14),n(4),n(13),n(3)],r=a,u="function"==typeof r?r.apply(e,o):r,!(void 0!==u&&(t.exports=u))}(this,function(t,e,n,r,o,u,i,a,f){"use strict";function c(t){return t&&t.__esModule?t:{"default":t}}function d(t){return function(e,n){var r=e||_,o=(0,b["default"])(n)?(0,v["default"])(n):n||g;(0,y["default"])((0,h["default"])(r),"mapStateToTarget must be a Function. Instead received %s.",r),(0,y["default"])((0,b["default"])(o)||(0,h["default"])(o),"mapDispatchToTarget must be a plain Object or a Function. Instead received %s.",o);var u=l(t.getState(),r,!1),i=(0,h["default"])(u);i&&(r=u,u=l(t.getState(),r));var a=o(t.dispatch);return function(e){(0,y["default"])((0,h["default"])(e)||(0,m["default"])(e),"The target parameter passed to connect must be a Function or a object."),s(e,u,a);var n=t.subscribe(function(){var n=l(t.getState(),r);(0,p["default"])(u,n)||(u=n,s(e,u,a))});return n}}}function s(t,e,n){(0,h["default"])(t)?t(e,n):(0,x["default"])(t,e,n)}function l(t,e){var n=2>=arguments.length||void 0===arguments[2]||arguments[2],r=e(t);return n?(0,y["default"])((0,b["default"])(r),"`mapStateToScope` must return an object. Instead received %s.",r):(0,y["default"])((0,b["default"])(r)||(0,h["default"])(r),"`mapStateToScope` must return an object or a function. Instead received %s.",r),r}Object.defineProperty(e,"__esModule",{value:!0}),e["default"]=d;var p=c(n),v=c(r),y=c(o),b=c(u),h=c(i),m=c(a),x=c(f),_=function(){return{}},g=function(t){return{dispatch:t}};t.exports=e["default"]})},function(t,e,n){var r,o,u;!function(n,i){o=[t,e],r=i,u="function"==typeof r?r.apply(e,o):r,!(void 0!==u&&(t.exports=u))}(this,function(t,e){"use strict";function n(t){return function(e){return function(e){return function(n){t.$evalAsync(e(n))}}}}Object.defineProperty(e,"__esModule",{value:!0}),e["default"]=n,t.exports=e["default"]})},function(t,e,n){var r,o,u;!function(i,a){o=[t,e,n(5),n(1),n(2),n(6),n(3),n(11),n(12),n(4),n(15)],r=a,u="function"==typeof r?r.apply(e,o):r,!(void 0!==u&&(t.exports=u))}(this,function(t,e,n,r,o,u,i,a,f,c,d){"use strict";function s(t){return t&&t.__esModule?t:{"default":t}}function l(){var t=void 0,e=void 0,n=void 0,r=void 0,u=void 0;this.createStoreWith=function(o,i,a,f){(0,v["default"])((0,x["default"])(o)||S(o),"The reducer parameter passed to createStoreWith must be a Function or an Object. Instead received %s.",void 0===o?"undefined":g(o)),(0,v["default"])(!a||(0,m["default"])(a),"The storeEnhancers parameter passed to createStoreWith must be an Array. Instead received %s.",void 0===a?"undefined":g(a)),t=o,u=S(o),n=a,e=i||[],r=f},this.$get=function(i){var a=function(t){return O(t)?i.get(t):t},f=(0,_["default"])(e,a),c=function(t){return O(t)?i.get(t):t},d=(0,_["default"])(n,c);u&&!function(){var e=function(e){return O(t[e])?i.get(t[e]):t[e]},n=function(t,n){var r;return(0,b["default"])({},t,(r={},r[n]=e(n),r))},r=Object.keys(t).reduce(n,{});t=(0,o.combineReducers)(r)}();var s=d?o.compose.apply(void 0,d)(o.createStore):o.createStore;f.push((0,y["default"])(i.get("$rootScope")));var l=r?o.applyMiddleware.apply(void 0,f)(s)(t,r):o.applyMiddleware.apply(void 0,f)(s)(t);return(0,b["default"])({},l,{connect:(0,p["default"])(l)})},this.$get.$inject=["$injector"]}Object.defineProperty(e,"__esModule",{value:!0}),e["default"]=l;var p=s(n),v=s(r),y=s(u),b=s(i),h=s(a),m=s(f),x=s(c),_=s(d),g="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},j=(0,h["default"])(function(t,e){return(void 0===e?"undefined":g(e))===t}),S=j("object"),O=j("string");t.exports=e["default"]})},function(t,e,n){var r,o,u;!function(i,a){o=[t,e,n(7)],r=a,u="function"==typeof r?r.apply(e,o):r,!(void 0!==u&&(t.exports=u))}(this,function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}Object.defineProperty(e,"__esModule",{value:!0});var o=r(n);e["default"]=angular.module("ngRedux",[]).provider("$ngRedux",o["default"]).name,t.exports=e["default"]})},function(t,e,n){var r,o,u;!function(n,i){o=[t,e],r=i,u="function"==typeof r?r.apply(e,o):r,!(void 0!==u&&(t.exports=u))}(this,function(t,e){"use strict";function n(t,e){if(t===e)return!0;var n=Object.keys(t).filter(function(t){return"$$hashKey"!==t}),r=Object.keys(e).filter(function(t){return"$$hashKey"!==t});if(n.length!==r.length)return!1;for(var o=Object.prototype.hasOwnProperty,u=0;n.length>u;u++)if(!o.call(e,n[u])||t[n[u]]!==e[n[u]])return!1;return!0}Object.defineProperty(e,"__esModule",{value:!0}),e["default"]=n,t.exports=e["default"]})},function(t,e,n){var r,o,u;!function(i,a){o=[t,e,n(2)],r=a,u="function"==typeof r?r.apply(e,o):r,!(void 0!==u&&(t.exports=u))}(this,function(t,e,n){"use strict";function r(t){return function(e){return(0,n.bindActionCreators)(t,e)}}Object.defineProperty(e,"__esModule",{value:!0}),e["default"]=r,t.exports=e["default"]})},function(t,e){t.exports=_.curry},function(t,e){t.exports=_.isArray},function(t,e){t.exports=_.isObject},function(t,e){t.exports=_.isPlainObject},function(t,e){t.exports=_.map}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+
+
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(7);
+
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	'use strict';
+
+	/**
+	 * Use invariant() to assert state which your program assumes to be true.
+	 *
+	 * Provide sprintf-style format (only %s is supported) and arguments
+	 * to provide information about what broke and what you were
+	 * expecting.
+	 *
+	 * The invariant message will be stripped in production, but the invariant
+	 * will remain to ensure logic does not differ in production.
+	 */
+
+	var invariant = function(condition, format, a, b, c, d, e, f) {
+	  if ((undefined) !== 'production') {
+	    if (format === undefined) {
+	      throw new Error('invariant requires an error message argument');
+	    }
+	  }
+
+	  if (!condition) {
+	    var error;
+	    if (format === undefined) {
+	      error = new Error(
+	        'Minified exception occurred; use the non-minified dev environment ' +
+	        'for the full error message and additional helpful warnings.'
+	      );
+	    } else {
+	      var args = [a, b, c, d, e, f];
+	      var argIndex = 0;
+	      error = new Error(
+	        format.replace(/%s/g, function() { return args[argIndex++]; })
+	      );
+	      error.name = 'Invariant Violation';
+	    }
+
+	    error.framesToPop = 1; // we don't care about invariant's own frame
+	    throw error;
+	  }
+	};
+
+	module.exports = invariant;
+
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	module.exports = Redux;
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	module.exports = _;
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, exports, __webpack_require__(8), __webpack_require__(9), __webpack_require__(1), __webpack_require__(3)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if (typeof exports !== "undefined") {
+	    factory(module, exports, require('../utils/shallowEqual'), require('../utils/wrapActionCreators'), require('invariant'), require('lodash'));
+	  } else {
+	    var mod = {
+	      exports: {}
+	    };
+	    factory(mod, mod.exports, global.shallowEqual, global.wrapActionCreators, global.invariant, global.lodash);
+	    global.connector = mod.exports;
+	  }
+	})(this, function (module, exports, _shallowEqual, _wrapActionCreators, _invariant, _lodash) {
+	  'use strict';
+
+	  Object.defineProperty(exports, "__esModule", {
+	    value: true
+	  });
+	  exports.default = Connector;
+
+	  var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
+
+	  var _wrapActionCreators2 = _interopRequireDefault(_wrapActionCreators);
+
+	  var _invariant2 = _interopRequireDefault(_invariant);
+
+	  function _interopRequireDefault(obj) {
+	    return obj && obj.__esModule ? obj : {
+	      default: obj
+	    };
+	  }
+
+	  var defaultMapStateToTarget = function defaultMapStateToTarget() {
+	    return {};
+	  };
+	  var defaultMapDispatchToTarget = function defaultMapDispatchToTarget(dispatch) {
+	    return { dispatch: dispatch };
+	  };
+
+	  function Connector(store) {
+	    return function (mapStateToTarget, mapDispatchToTarget) {
+
+	      var finalMapStateToTarget = mapStateToTarget || defaultMapStateToTarget;
+
+	      var finalMapDispatchToTarget = (0, _lodash.isPlainObject)(mapDispatchToTarget) ? (0, _wrapActionCreators2.default)(mapDispatchToTarget) : mapDispatchToTarget || defaultMapDispatchToTarget;
+
+	      (0, _invariant2.default)((0, _lodash.isFunction)(finalMapStateToTarget), 'mapStateToTarget must be a Function. Instead received %s.', finalMapStateToTarget);
+
+	      (0, _invariant2.default)((0, _lodash.isPlainObject)(finalMapDispatchToTarget) || (0, _lodash.isFunction)(finalMapDispatchToTarget), 'mapDispatchToTarget must be a plain Object or a Function. Instead received %s.', finalMapDispatchToTarget);
+
+	      var slice = getStateSlice(store.getState(), finalMapStateToTarget, false);
+	      var isFactory = (0, _lodash.isFunction)(slice);
+
+	      if (isFactory) {
+	        finalMapStateToTarget = slice;
+	        slice = getStateSlice(store.getState(), finalMapStateToTarget);
+	      }
+
+	      var boundActionCreators = finalMapDispatchToTarget(store.dispatch);
+
+	      return function (target) {
+
+	        (0, _invariant2.default)((0, _lodash.isFunction)(target) || (0, _lodash.isObject)(target), 'The target parameter passed to connect must be a Function or a object.');
+
+	        //Initial update
+	        updateTarget(target, slice, boundActionCreators);
+
+	        var unsubscribe = store.subscribe(function () {
+	          var nextSlice = getStateSlice(store.getState(), finalMapStateToTarget);
+	          if (!(0, _shallowEqual2.default)(slice, nextSlice)) {
+	            slice = nextSlice;
+	            updateTarget(target, slice, boundActionCreators);
+	          }
+	        });
+	        return unsubscribe;
+	      };
+	    };
+	  }
+
+	  function updateTarget(target, StateSlice, dispatch) {
+	    if ((0, _lodash.isFunction)(target)) {
+	      target(StateSlice, dispatch);
+	    } else {
+	      (0, _lodash.assign)(target, StateSlice, dispatch);
+	    }
+	  }
+
+	  function getStateSlice(state, mapStateToScope) {
+	    var shouldReturnObject = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+
+	    var slice = mapStateToScope(state);
+
+	    if (shouldReturnObject) {
+	      (0, _invariant2.default)((0, _lodash.isPlainObject)(slice), '`mapStateToScope` must return an object. Instead received %s.', slice);
+	    } else {
+	      (0, _invariant2.default)((0, _lodash.isPlainObject)(slice) || (0, _lodash.isFunction)(slice), '`mapStateToScope` must return an object or a function. Instead received %s.', slice);
+	    }
+
+	    return slice;
+	  }
+	  module.exports = exports['default'];
+	});
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if (typeof exports !== "undefined") {
+	    factory(module, exports);
+	  } else {
+	    var mod = {
+	      exports: {}
+	    };
+	    factory(mod, mod.exports);
+	    global.digestMiddleware = mod.exports;
+	  }
+	})(this, function (module, exports) {
+	  "use strict";
+
+	  Object.defineProperty(exports, "__esModule", {
+	    value: true
+	  });
+	  exports.default = digestMiddleware;
+	  function digestMiddleware($rootScope) {
+	    return function (store) {
+	      return function (next) {
+	        return function (action) {
+	          $rootScope.$evalAsync(next(action));
+	        };
+	      };
+	    };
+	  }
+	  module.exports = exports["default"];
+	});
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, exports, __webpack_require__(4), __webpack_require__(1), __webpack_require__(2), __webpack_require__(5), __webpack_require__(3)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if (typeof exports !== "undefined") {
+	    factory(module, exports, require('./connector'), require('invariant'), require('redux'), require('./digestMiddleware'), require('lodash'));
+	  } else {
+	    var mod = {
+	      exports: {}
+	    };
+	    factory(mod, mod.exports, global.connector, global.invariant, global.redux, global.digestMiddleware, global.lodash);
+	    global.ngRedux = mod.exports;
+	  }
+	})(this, function (module, exports, _connector, _invariant, _redux, _digestMiddleware, _lodash) {
+	  'use strict';
+
+	  Object.defineProperty(exports, "__esModule", {
+	    value: true
+	  });
+	  exports.default = ngReduxProvider;
+
+	  var _connector2 = _interopRequireDefault(_connector);
+
+	  var _invariant2 = _interopRequireDefault(_invariant);
+
+	  var _digestMiddleware2 = _interopRequireDefault(_digestMiddleware);
+
+	  function _interopRequireDefault(obj) {
+	    return obj && obj.__esModule ? obj : {
+	      default: obj
+	    };
+	  }
+
+	  var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+	    return typeof obj;
+	  } : function (obj) {
+	    return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+	  };
+
+	  var typeIs = (0, _lodash.curry)(function (type, val) {
+	    return (typeof val === 'undefined' ? 'undefined' : _typeof(val)) === type;
+	  });
+	  var isObject = typeIs('object');
+	  var isString = typeIs('string');
+
+	  function ngReduxProvider() {
+	    var _reducer = undefined;
+	    var _middlewares = undefined;
+	    var _storeEnhancers = undefined;
+	    var _initialState = undefined;
+	    var _reducerIsObject = undefined;
+
+	    this.createStoreWith = function (reducer, middlewares, storeEnhancers, initialState) {
+	      (0, _invariant2.default)((0, _lodash.isFunction)(reducer) || isObject(reducer), 'The reducer parameter passed to createStoreWith must be a Function or an Object. Instead received %s.', typeof reducer === 'undefined' ? 'undefined' : _typeof(reducer));
+
+	      (0, _invariant2.default)(!storeEnhancers || (0, _lodash.isArray)(storeEnhancers), 'The storeEnhancers parameter passed to createStoreWith must be an Array. Instead received %s.', typeof storeEnhancers === 'undefined' ? 'undefined' : _typeof(storeEnhancers));
+
+	      _reducer = reducer;
+	      _reducerIsObject = isObject(reducer);
+	      _storeEnhancers = storeEnhancers;
+	      _middlewares = middlewares || [];
+	      _initialState = initialState;
+	    };
+
+	    this.$get = function ($injector) {
+	      var resolveMiddleware = function resolveMiddleware(middleware) {
+	        return isString(middleware) ? $injector.get(middleware) : middleware;
+	      };
+
+	      var resolvedMiddleware = (0, _lodash.map)(_middlewares, resolveMiddleware);
+
+	      var resolveStoreEnhancer = function resolveStoreEnhancer(storeEnhancer) {
+	        return isString(storeEnhancer) ? $injector.get(storeEnhancer) : storeEnhancer;
+	      };
+
+	      var resolvedStoreEnhancer = (0, _lodash.map)(_storeEnhancers, resolveStoreEnhancer);
+
+	      if (_reducerIsObject) {
+	        (function () {
+	          var getReducerKey = function getReducerKey(key) {
+	            return isString(_reducer[key]) ? $injector.get(_reducer[key]) : _reducer[key];
+	          };
+
+	          var resolveReducerKey = function resolveReducerKey(result, key) {
+	            var _assign;
+
+	            return (0, _lodash.assign)({}, result, (_assign = {}, _assign[key] = getReducerKey(key), _assign));
+	          };
+
+	          var reducersObj = Object.keys(_reducer).reduce(resolveReducerKey, {});
+
+	          _reducer = (0, _redux.combineReducers)(reducersObj);
+	        })();
+	      }
+
+	      var finalCreateStore = resolvedStoreEnhancer ? _redux.compose.apply(undefined, resolvedStoreEnhancer)(_redux.createStore) : _redux.createStore;
+
+	      //digestMiddleware needs to be the last one.
+	      resolvedMiddleware.push((0, _digestMiddleware2.default)($injector.get('$rootScope')));
+
+	      var store = _initialState ? _redux.applyMiddleware.apply(undefined, resolvedMiddleware)(finalCreateStore)(_reducer, _initialState) : _redux.applyMiddleware.apply(undefined, resolvedMiddleware)(finalCreateStore)(_reducer);
+
+	      return (0, _lodash.assign)({}, store, { connect: (0, _connector2.default)(store) });
+	    };
+
+	    this.$get.$inject = ['$injector'];
+	  }
+	  module.exports = exports['default'];
+	});
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, exports, __webpack_require__(6)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if (typeof exports !== "undefined") {
+	    factory(module, exports, require('./components/ngRedux'));
+	  } else {
+	    var mod = {
+	      exports: {}
+	    };
+	    factory(mod, mod.exports, global.ngRedux);
+	    global.index = mod.exports;
+	  }
+	})(this, function (module, exports, _ngRedux) {
+	  'use strict';
+
+	  Object.defineProperty(exports, "__esModule", {
+	    value: true
+	  });
+
+	  var _ngRedux2 = _interopRequireDefault(_ngRedux);
+
+	  function _interopRequireDefault(obj) {
+	    return obj && obj.__esModule ? obj : {
+	      default: obj
+	    };
+	  }
+
+	  exports.default = angular.module('ngRedux', []).provider('$ngRedux', _ngRedux2.default).name;
+	  module.exports = exports['default'];
+	});
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if (typeof exports !== "undefined") {
+	    factory(module, exports);
+	  } else {
+	    var mod = {
+	      exports: {}
+	    };
+	    factory(mod, mod.exports);
+	    global.shallowEqual = mod.exports;
+	  }
+	})(this, function (module, exports) {
+	  'use strict';
+
+	  Object.defineProperty(exports, "__esModule", {
+	    value: true
+	  });
+	  exports.default = shallowEqual;
+	  function shallowEqual(objA, objB) {
+	    if (objA === objB) {
+	      return true;
+	    }
+
+	    /* $$hashKey is added by angular when using ng-repeat, we ignore that*/
+	    var keysA = Object.keys(objA).filter(function (k) {
+	      return k !== '$$hashKey';
+	    });
+	    var keysB = Object.keys(objB).filter(function (k) {
+	      return k !== '$$hashKey';
+	    });
+
+	    if (keysA.length !== keysB.length) {
+	      return false;
+	    }
+
+	    // Test for A's keys different from B.
+	    var hasOwn = Object.prototype.hasOwnProperty;
+	    for (var i = 0; i < keysA.length; i++) {
+	      if (!hasOwn.call(objB, keysA[i]) || objA[keysA[i]] !== objB[keysA[i]]) {
+	        return false;
+	      }
+	    }
+
+	    return true;
+	  }
+	  module.exports = exports['default'];
+	});
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, exports, __webpack_require__(2)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if (typeof exports !== "undefined") {
+	    factory(module, exports, require('redux'));
+	  } else {
+	    var mod = {
+	      exports: {}
+	    };
+	    factory(mod, mod.exports, global.redux);
+	    global.wrapActionCreators = mod.exports;
+	  }
+	})(this, function (module, exports, _redux) {
+	  'use strict';
+
+	  Object.defineProperty(exports, "__esModule", {
+	    value: true
+	  });
+	  exports.default = wrapActionCreators;
+	  function wrapActionCreators(actionCreators) {
+	    return function (dispatch) {
+	      return (0, _redux.bindActionCreators)(actionCreators, dispatch);
+	    };
+	  }
+	  module.exports = exports['default'];
+	});
+
+/***/ }
+/******/ ]);

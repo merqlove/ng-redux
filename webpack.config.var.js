@@ -1,6 +1,7 @@
 var path = require('path');
-var _ = require('lodash');
+var _ = require('lodash/core');
 
+var env = process.env.NODE_ENV;
 var config  = require('./webpack.config.base');
 
 config.externalHelper.generateExternal = function (toLib, fromLib, to) {
@@ -19,7 +20,7 @@ config.externals = config.generateExternals(config.externalHelper.externals);
 
 config.output = {
   path: path.join(__dirname, 'dist'),
-  filename: 'ng-redux.var.js',
+  filename: env === 'production' ? 'ng-redux.var.min.js' : 'ng-redux.var.js',
   libraryTarget: 'var',
 };
 

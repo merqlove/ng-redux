@@ -7,7 +7,7 @@
   ],
   "description": "Redux bindings for Angular.js",
   "main": [
-    "./dist/ng-redux.var.js"
+    "./dist/ng-redux.var.min.js"
   ],
   "moduleType": [],
   "keywords": [

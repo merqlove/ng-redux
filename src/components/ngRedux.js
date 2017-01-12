@@ -3,11 +3,7 @@ import invariant from 'invariant';
 import {createStore, applyMiddleware, compose, combineReducers} from 'redux';
 import digestMiddleware from './digestMiddleware';
 
-import assign from 'lodash.assign';
-import curry from 'lodash.curry';
-import isArray from 'lodash.isarray';
-import isFunction from 'lodash.isfunction';
-import map from 'lodash.map';
+import { isArray, isFunction, curry, assign, map } from 'lodash';
 
 const typeIs = curry((type, val) => typeof val === type);
 const isObject = typeIs('object');

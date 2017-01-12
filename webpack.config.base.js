@@ -6,18 +6,7 @@ var env = process.env.NODE_ENV;
 
 var externalHelper = {
   externals: {
-    lodash: [
-      '_',
-      {
-        map: 'map',
-        assign: 'assign',
-        curry: 'curry',
-        isarray: 'isArray',
-        isfunction: 'isFunction',
-        isobject: 'isObject',
-        isplainobject: 'isPlainObject'
-      }
-    ],
+    'lodash': '_',
     redux: 'Redux'
   },
 
@@ -65,7 +54,7 @@ var config = {
     ],
     output: {
       path: path.join(__dirname, 'dist'),
-      filename: 'ng-redux.js'
+      filename: 'ng-redux.[name].js'
     },
     plugins: [
       new webpack.NoErrorsPlugin(),
