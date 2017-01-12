@@ -13,8 +13,8 @@
     "redux"
   ],
   "dependencies": {
-    "lodash": "~4.10.0",
-    "redux": "~3.0"
+    "lodash": "~4.0",
+    "redux": "latest"
   },
   "license": "MIT",
   "ignore": [
