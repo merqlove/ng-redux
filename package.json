@@ -4,10 +4,11 @@
   "description": "Redux bindings for Angular.js",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "npm run build:lib && npm run build:min && npm run build:max",
+    "build": "npm run build:lib && npm run build:min && npm run build:max && npm run build:umd",
     "build:lib": "rm -rf lib && `npm bin`/babel src --out-dir lib",
     "build:min": "./node_modules/.bin/webpack --optimize-minimize lib/index.js dist/ng-redux.min.js",
     "build:max": "./node_modules/.bin/webpack lib/index.js dist/ng-redux.js",
+    "build:umd": "./node_modules/.bin/webpack --config webpack.config.umd.js",
     "test": "mocha --compilers js:babel-register --recursive"
   },
   "repository": {
@@ -31,6 +32,7 @@
     "mocha": "^2.2.5",
     "sinon": "^1.16.1",
     "webpack": "^1.12.11",
+    "webpack-node-externals": "latest",
     "semantic-release": "^4.3.5"
   },
   "peerDependencies": {

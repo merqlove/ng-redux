@@ -6,12 +6,16 @@
     "William Buchwalter <wbuchwalter@gmail.com> (http://github.com/wbuchwalter)"
   ],
   "description": "Redux bindings for Angular.js",
-  "main": "./dist/ng-redux.min.js",
+  "main": "./dist/ng-redux.umd.js",
   "moduleType": [],
   "keywords": [
     "angular",
     "redux"
   ],
+  "dependencies": {
+    "lodash": "~4.10.0",
+    "redux": "~3.0"
+  },
   "license": "MIT",
   "ignore": [
     "**/.*",
