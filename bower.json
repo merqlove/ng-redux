@@ -6,7 +6,7 @@
     "William Buchwalter <wbuchwalter@gmail.com> (http://github.com/wbuchwalter)"
   ],
   "description": "Redux bindings for Angular.js",
-  "main": "./dist/ng-redux.umd.js",
+  "main": "./dist/ng-redux.var.js",
   "moduleType": [],
   "keywords": [
     "angular",
