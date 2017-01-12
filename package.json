@@ -8,7 +8,7 @@
     "build:lib": "rm -rf lib && `npm bin`/babel src --out-dir lib",
     "build:min": "./node_modules/.bin/webpack --optimize-minimize lib/index.js dist/ng-redux.min.js",
     "build:max": "./node_modules/.bin/webpack lib/index.js dist/ng-redux.js",
-    "build:umd": "./node_modules/.bin/webpack --config webpack.config.umd.js",
+    "build:amd": "./node_modules/.bin/webpack --config webpack.config.amd.js",
     "test": "mocha --compilers js:babel-register --recursive"
   },
   "repository": {
@@ -34,9 +34,6 @@
     "webpack": "^1.12.11",
     "webpack-node-externals": "latest",
     "semantic-release": "^4.3.5"
-  },
-  "peerDependencies": {
-    "redux": "^3.0.0"
   },
   "dependencies": {
     "invariant": "^2.1.0",
