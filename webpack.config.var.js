@@ -21,7 +21,7 @@ var externals = {
 function generateExternal(toLib, fromLib, to) {
   var frontend, backend;
 
-  if(to !== null) {
+  if(!_.isEmpty(to)) {
     frontend = toLib + '.' + to;
     backend = fromLib + '.' + to;
   } else {

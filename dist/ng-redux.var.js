@@ -345,7 +345,7 @@
 /* 6 */
 /***/ function(module, exports) {
 
-	module.exports = Redux.undefined;
+	module.exports = Redux;
 
 /***/ },
 /* 7 */
